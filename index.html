@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="content">
+            <img class="logo" src="assets/images/logo.png" alt="Logo de alura">
+            <h1>Encriptador de texto</h1>
+            <textarea id="textAreaTextConverted" rows="10" cols="50" placeholder="Ingrese el texto aqui:"></textarea>
+            <div class="info">
+                <img src="assets/images/bi_exclamation-circle-fill.png" alt="icono de ayuda" width="16" height="16">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-primary" id="btnEncrypt">Encriptar</button>
+                <button class="btn btn-secondary" id="btnDecrypt">Desencriptar</button>
+            </div>
+        </aside>
+        <aside id="aside-right" class="aside-right">
+            <div id="withOutTextToEncript">
+                <img class="imagen__sin__resultado" src="assets/images/muneco.png" alt="Ilustración de una persona buscando">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="withTextToEncript">
+                <div id="elementTextResult"></div>
+                <div class="buttons">
+                    <button id="btnCopy" class="btn btn-secondary">Copia</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="assets/app.js" defer></script>
+</body>
+</html>
